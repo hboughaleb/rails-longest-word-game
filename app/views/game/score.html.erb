@@ -1,5 +1,7 @@
-<h1>Game#score</h1>
-<p>Find me in app/views/game/score.html.erb</p>
+<h1>Results</h1>
 
-<p><%=@time%></p>
-<p><%= @score %></p>
+<p>Answered in <%=@time%> seconds !</p>
+<p>You scored: <%= @score[0].round(2) %></p>
+<p><%= @score[1] %></p>
+
+<p><%= link_to "Play again", game_path %></p>
